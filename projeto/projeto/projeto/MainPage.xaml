@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projeto.MainPage">
+
+    <StackLayout>
+        
+        <Label Text="Informe sua Altura:" FontSize="15"/>
+        <Entry x:Name="txt_altura" Keyboard="Numeric"/>
+        
+        <Label Text="Informe seu Peso:" FontSize="15"/>
+        <Entry x:Name="txt_peso" Keyboard="Numeric"/>
+
+        <Button Text="Calcular" Clicked="Button_Clicked" BackgroundColor="Black" TextColor="White"/>
+        
+        
+        <Grid ColumnDefinitions="*, *"
+              RowDefinitions="*, *, *, *, *, *, *">
+
+            <Label Grid.Row="0" Grid.Column="0" Text="classificação" HorizontalOptions="Center"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="imc" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Text="abaixo do peso" HorizontalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="abaixo de 18,5" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Text="peso ideal" HorizontalOptions="Center"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="18,5 - 24,9" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Text="acima do peso" HorizontalOptions="Center"/>
+            <Label Grid.Row="3" Grid.Column="1" Text="25 - 29,9" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Text="obesidade I" HorizontalOptions="Center"/>
+            <Label Grid.Row="4" Grid.Column="1" Text="30 - 34,9" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Text="obesidade II" HorizontalOptions="Center"/>
+            <Label Grid.Row="5" Grid.Column="1" Text="35 - 39,9" HorizontalOptions="Center"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Text="obesidade morbida" HorizontalOptions="Center"/>
+            <Label Grid.Row="6" Grid.Column="1" Text="maior de 40" HorizontalOptions="Center"/>
+
+        </Grid>
+        
+    </StackLayout>
+</ContentPage>
